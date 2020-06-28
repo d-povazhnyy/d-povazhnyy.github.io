@@ -9,6 +9,10 @@
     }
 }
 
+:focus {
+    outline: none;
+}
+
 
 /* Slider */
 
@@ -273,36 +277,80 @@ button:focus {
 }
 
 .main-login-ico {
-    background-image: url(../img/ico/709722.png);
+    background-image: url(../img/ico/main-login-ico.svg);
     width: 43px;
     height: 43px;
     margin-left: 40px;
-    transition-duration: 1s;
-    background-size: 43px 43px;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
     background-position: center;
+    border-radius: 30px;
+    border: solid 2px var(--sick-green);
+    display: inline-block;
 }
 
 .main-login-ico:hover {
-    background-image: url(../img/ico/2@2x.png);
+    background-image: url(../img/ico/main-login-ico-hover.svg);
     width: 43px;
     height: 43px;
+    background-color: var(--sick-green);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: 43px 43px;
-    transition-duration: 1s;
+    border-radius: 30px;
+    border: solid 2px var(--sick-green);
 }
 
 .main-favorites-ico {
-    background-image: url(../img/ico/1077035.png);
+    background-image: url(../img/ico/favorites-ico-btm.svg);
     width: 43px;
     height: 43px;
     margin-left: 20px;
+    background-size: 26px 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30px;
+    border: solid 2px var(--pinkish-grey);
+    display: inline-block;
+}
+
+.main-favorites-ico:hover {
+    background-image: url(../img/ico/favorites-ico-btm-color.svg);
+    width: 43px;
+    height: 43px;
+    margin-left: 20px;
+    background-size: 26px 23px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30px;
+    border: solid 2px var(--pinkish-grey);
+    background-color: var(--pinkish-grey);
 }
 
 .main-basket-ico {
-    background-image: url(../img/ico/1374128.png);
+    background-image: url(../img/ico/basket-ico-btm.svg);
     width: 43px;
     height: 43px;
     margin-left: 20px;
+    background-size: 23px 23px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30px;
+    border: solid 2px var(--purply);
+    display: inline-block;
+}
+
+.main-basket-ico:hover {
+    background-image: url(../img/ico/basket-ico-btm-hover-white.svg);
+    width: 43px;
+    height: 43px;
+    margin-left: 20px;
+    background-size: 23px 23px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30px;
+    border: solid 2px var(--purply);
+    background-color: var(--purply);
 }
 
 .main-navbar-2 {
@@ -503,18 +551,20 @@ button:focus {
 .main-search-buttom {
     margin-left: 5px;
     border-radius: 10px;
-    background-image: url(../img/ico/search.png);
+    background-image: url(../img/ico/search.svg);
     background-repeat: no-repeat;
     background-position: center;
     width: 56px;
     height: 48px;
+    background-size: 27px 27px;
 }
 
 .main-search-buttom:hover {
     background-color: var(--purply);
-    background-image: url(../img/ico/search-hover.png);
+    background-image: url(../img/ico/search-hover.svg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 27px 27px;
 }
 
 .dropdown-toggle::after {
@@ -701,8 +751,10 @@ button:focus {
     border-radius: 10px;
     box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
     background-color: var(--white-two);
-    margin-left: 15.5px;
-    margin-right: 15.5px;
+    margin-left: 26.5px;
+    margin-right: 26.5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .main-cart-index:hover {
@@ -712,44 +764,53 @@ button:focus {
 .card-body {
     padding-bottom: 16px!important;
     border-radius: 10px;
+    position: relative;
 }
 
 .card-body:hover {
     background-color: var(--white);
 }
 
-.owl-carousel {
-    padding-top: 55px;
+.slider-main {
+    padding-top: 50px;
 }
 
-.owl-stage {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.owl-stage-outer {
-    width: 1275px;
-    margin-left: 43px;
-}
-
-.owl-nav {
-    margin: 0;
-}
-
-.owl-prev {
+.slick-prev {
     position: absolute;
-    left: 0;
+    left: -25px;
     top: 268px;
-}
-
-.owl-next {
-    position: absolute;
-    right: 0;
-    top: 268px;
-}
-
-.owl-theme .owl-nav [class*=owl-]:hover {
     background: none;
+    border: none;
+    z-index: 100;
+}
+
+.slick-next {
+    position: absolute;
+    right: -25px;
+    top: 268px;
+    background: none;
+    border: none;
+}
+
+.slick-prev-svg {
+    width: 35px;
+    height: auto;
+    fill: #c0bdc1;
+}
+
+.slick-prev-svg:hover {
+    fill: #a639c2;
+}
+
+.slick-next-svg {
+    width: 35px;
+    height: auto;
+    fill: #c0bdc1;
+    transform: rotate(180deg);
+}
+
+.slick-next-svg:hover {
+    fill: #a639c2;
 }
 
 .main-cart-index-link {
@@ -884,21 +945,25 @@ button:focus {
 
 .main-card-bay-ico {
     position: absolute;
-    margin-right: 32px;
-    margin-top: 11px;
+    margin-right: 19px;
+    margin-top: 12px;
     top: 0;
     right: 0;
-    background-image: url(../img/ico/bay.png);
+    background-image: url(../img/ico/basket-ico-btm.svg);
     width: 23px;
     height: 23px;
     background-size: 23px 23px;
     background-position: center;
 }
 
+.main-card-bay-ico:hover {
+    background-image: url(../img/ico/basket-ico-btm-hover-color.svg);
+}
+
 .main-card-favorites-ico {
     position: absolute;
-    margin-left: 34px;
-    margin-top: 11px;
+    margin-left: 19px;
+    margin-top: 12px;
     top: 0;
     left: 0;
     background-image: url(../img/ico/item-favorites-ico.svg);
@@ -916,7 +981,7 @@ button:focus {
     align-items: center;
     justify-content: center;
     display: flex;
-    padding-top: 30px;
+    padding-top: 35px;
 }
 
 .main-heading-new-a {
@@ -984,7 +1049,7 @@ button:focus {
     align-items: center;
     justify-content: center;
     display: flex;
-    padding-top: 30px;
+    padding-top: 37px;
 }
 
 .main-heading-catalog-a {
@@ -1043,7 +1108,7 @@ button:focus {
     align-items: center;
     justify-content: center;
     display: flex;
-    padding-top: 32px;
+    padding-top: 35px;
 }
 
 .main-heading-popular-a {
@@ -1102,7 +1167,7 @@ button:focus {
     align-items: center;
     justify-content: center;
     display: flex;
-    padding-top: 32px;
+    padding-top: 37px;
 }
 
 .main-heading-stocks-a {
@@ -1277,25 +1342,58 @@ footer {
 
 .main-whatsapp-ico {
     display: inline-block;
-    background-image: url(../img/ico/466966.svg);
+    background-image: url(../img/ico/whatsapp.svg);
     width: 52px;
     height: 52px;
     margin-left: 40px;
     margin-top: 19px;
-    transition-duration: 1s;
-    background-size: 52px 52px;
+    background-size: 31px 31px;
     background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border: solid 3px var(--white);
+}
+
+.main-whatsapp-ico:hover {
+    display: inline-block;
+    background-image: url(../img/ico/whatsapp.svg);
+    width: 52px;
+    height: 52px;
+    margin-left: 40px;
+    margin-top: 19px;
+    background-size: 31px 31px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border: solid 3px var(--purply);
+    background-color: var(--purply);
 }
 
 .main-telegram-ico {
     display: inline-block;
-    background-image: url(../img/ico/2950.png);
+    background-image: url(../img/ico/telegram-btm.svg);
     width: 49px;
     height: 49px;
     margin-left: 17px;
-    transition-duration: 1s;
-    background-size: 49px 49px;
+    background-repeat: no-repeat;
+    background-size: 31px 28px;
     background-position: center;
+    border-radius: 10px;
+    border: solid 3px var(--white);
+}
+
+.main-telegram-ico:hover {
+    display: inline-block;
+    background-image: url(../img/ico/telegram-btm.svg);
+    width: 49px;
+    height: 49px;
+    margin-left: 17px;
+    background-repeat: no-repeat;
+    background-size: 31px 28px;
+    background-position: center;
+    border-radius: 10px;
+    border: solid 3px var(--purply);
+    background-color: var(--purply);
 }
 
 .nav-link2 {
@@ -1496,6 +1594,58 @@ footer {
     transition-duration: 300ms;
 }
 
+.catalog-filter-ico {
+    width: 26px;
+    height: 26px;
+    background-image: url(/assets/img/ico/filter.svg);
+    background-position: center;
+    background-size: 26px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 82px;
+    transition-duration: 300ms;
+}
+
+.catalog-filter-btn:hover>.catalog-filter-ico {
+    width: 26px;
+    height: 26px;
+    background-image: url(/assets/img/ico/filter-hover.svg);
+    background-position: center;
+    background-size: 26px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 82px;
+    transition-duration: 300ms;
+}
+
+.catalog-sort-ico {
+    width: 26px;
+    height: 26px;
+    background-image: url(/assets/img/ico/sort.svg);
+    background-position: center;
+    background-size: 26px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 51px;
+    transition-duration: 300ms;
+}
+
+.catalog-filter-btn:hover>.catalog-sort-ico {
+    width: 26px;
+    height: 26px;
+    background-image: url(/assets/img/ico/sort-hover.svg);
+    background-position: center;
+    background-size: 26px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 51px;
+    transition-duration: 300ms;
+}
+
 .catalog-block-jumbotron {
     padding-top: 35px;
     padding-bottom: 45px;
@@ -1604,7 +1754,7 @@ footer {
     width: 140px;
 }
 
-.slick-prev {
+.slick-up {
     background: none;
     border: none;
     padding-bottom: 38px;
@@ -1612,7 +1762,7 @@ footer {
     display: flex;
 }
 
-.slick-next {
+.slick-down {
     background: none;
     border: none;
     padding-top: 38px;
@@ -1620,25 +1770,25 @@ footer {
     display: flex;
 }
 
-.slick-prev-svg {
+.slick-up-svg {
     width: 35px;
     height: auto;
     fill: #c0bdc1;
     transform: rotate(90deg);
 }
 
-.slick-prev-svg:hover {
+.slick-up-svg:hover {
     fill: #a639c2;
 }
 
-.slick-next-svg {
+.slick-down-svg {
     width: 35px;
     height: auto;
     fill: #c0bdc1;
     transform: rotate(-90deg);
 }
 
-.slick-next-svg:hover {
+.slick-down-svg:hover {
     fill: #a639c2;
 }
 
@@ -2262,4 +2412,177 @@ footer {
 
 .d-td:not(.no-p) {
     padding: 4px;
+}
+
+.account-menu {
+    padding-top: 37px;
+    background-color: var(--white);
+}
+
+.am-a-nav {
+    font-family: AvenirNextCyr;
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--purplish-grey);
+}
+
+.am-ico-favorites {
+    margin-top: 22px;
+    margin-bottom: 12px;
+    background-image: url(../img/ico/favorites-ico-btm.svg);
+    background-size: 49px 43px;
+    width: 49px;
+    height: 43px;
+    display: inline-block;
+}
+
+.am-btm:hover>.am-ico-favorites,
+.am-btm.active>.am-ico-favorites {
+    margin-top: 22px;
+    margin-bottom: 12px;
+    background-image: url(../img/ico/favorites-ico-btm-hover.svg);
+    background-size: 49px 43px;
+    width: 49px;
+    height: 43px;
+    display: inline-block;
+}
+
+.am-ico-basket {
+    margin-top: 22px;
+    margin-bottom: 12px;
+    background-image: url(../img/ico/basket-ico-btm.svg);
+    background-size: 43px 43px;
+    width: 43px;
+    height: 43px;
+    display: inline-block;
+}
+
+.am-btm2:hover>.am-ico-basket,
+.am-btm2.active>.am-ico-basket {
+    margin-top: 22px;
+    margin-bottom: 12px;
+    background-image: url(../img/ico/basket-ico-btm-hover.svg);
+    background-size: 43px 43px;
+    width: 43px;
+    height: 43px;
+    display: inline-block;
+}
+
+.am-ico-history {
+    margin-top: 22px;
+    margin-bottom: 12px;
+    background-image: url(../img/ico/history-ico-btm.svg);
+    background-size: 55px 43px;
+    width: 55px;
+    height: 43px;
+    display: inline-block;
+}
+
+.am-btm3:hover>.am-ico-history,
+.am-btm3.active>.am-ico-history {
+    margin-top: 22px;
+    margin-bottom: 12px;
+    background-image: url(../img/ico/history-ico-btm-hover.svg);
+    background-size: 55px 43px;
+    width: 55px;
+    height: 43px;
+    display: inline-block;
+}
+
+.am-ico-account {
+    margin-top: 22px;
+    margin-bottom: 12px;
+    background-image: url(../img/ico/account-ico-btm.svg);
+    background-size: 43px 43px;
+    width: 43px;
+    height: 43px;
+    display: inline-block;
+}
+
+.am-btm4:hover>.am-ico-account,
+.am-btm4.active>.am-ico-account {
+    margin-top: 22px;
+    margin-bottom: 12px;
+    background-image: url(../img/ico/account-ico-btm-hover.svg);
+    background-size: 43px 43px;
+    width: 43px;
+    height: 43px;
+    display: inline-block;
+}
+
+.am-btm {
+    width: 200px;
+    height: 129px;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+.am-btm:hover,
+.am-btm.active {
+    text-decoration: none;
+    color: #fffeff;
+    width: 200px;
+    height: 129px;
+    display: block;
+    background-color: var(--pinkish-grey);
+    border-radius: 10px 10px 0 0;
+}
+
+.am-btm2 {
+    width: 200px;
+    height: 129px;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+.am-btm2:hover,
+.am-btm2.active {
+    text-decoration: none;
+    color: #fffeff;
+    width: 200px;
+    height: 129px;
+    display: block;
+    background-color: var(--purply);
+    border-radius: 10px 10px 0 0;
+}
+
+.am-btm3 {
+    width: 269px;
+    height: 129px;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+.am-btm3:hover,
+.am-btm3.active {
+    text-decoration: none;
+    color: #fffeff;
+    width: 269px;
+    height: 129px;
+    display: block;
+    background-color: var(--heather);
+    border-radius: 10px 10px 0 0;
+}
+
+.am-btm4 {
+    width: 316px;
+    height: 129px;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+.am-btm4:hover,
+.am-btm4.active {
+    text-decoration: none;
+    color: #fffeff;
+    width: 316px;
+    height: 129px;
+    display: block;
+    background-color: var(--sick-green);
+    border-radius: 10px 10px 0 0;
 }
