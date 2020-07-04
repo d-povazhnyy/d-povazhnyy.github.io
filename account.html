@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap-select.css">
     <link rel="stylesheet" href="assets/fonts/fonts.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/intlTelInput.css">
+
 
 
 
@@ -137,9 +137,6 @@
             </ol>
         </div>
     </nav>
-
-
-
     <div class="account-menu">
         <div class="container">
             <div class="row justify-content-between m-0">
@@ -178,6 +175,67 @@
             <span class="main-heading-line3"></span>
             <span class="heading-span">МОЙ ПРОФИЛЬ</span>
         </div>
+    </div>
+    <div class="container ">
+        <div class="wrapper">
+            <div class="account-table">
+                <div class="account-row table-head-bg">
+                    <div class="account-columns">ФИО</div>
+                    <div class="account-columns">Юлдашев Алексей Никифорович</div>
+                    <div class="account-columns"></div>
+                    <div class="account-columns"><button class="btn btm-edit" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">Изменить</button>
+                    </div>
+
+                </div>
+                <div class="account-row table-head-bg collapse" id="collapseExample1">
+                    <div class="account-columns"></div>
+                    <div class="account-columns"><input type="text" class="form-control account-input" placeholder="ФИО"></div>
+                    <div class="account-columns"></div>
+                    <div class="account-columns"><button class="btn btm-edit" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">Сохранить</button>
+                    </div>
+                </div>
+                <div class="account-row">
+                    <div class="account-columns">Номер телефона</div>
+                    <div class="account-columns">+7 913 467 328</div>
+                    <div class="account-columns text-center"><button class="btn btm-plus" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4"></button></div>
+                    <div class="account-columns"><button class="btn btm-edit" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">Изменить</button>
+                    </div>
+                </div>
+                <div class="account-row collapse" id="collapseExample4"></div>
+                <div class="account-row collapse" id="collapseExample5">
+                    <div class="account-columns"></div>
+                    <div class="account-columns"><input type="tel" id="phone" name="tel" class="form-control account-input" placeholder="Номер телефона"></div>
+                    <div class="account-columns"></div>
+                    <div class="account-columns"><button class="btn btm-edit" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">Сохранить</button>
+                    </div>
+                </div>
+                <div class="account-row table-head-bg">
+                    <div class="account-columns">Email</div>
+                    <div class="account-columns">kjasjcnoni@gmail.com</div>
+                    <div class="account-columns"></div>
+                    <div class="account-columns"><button class="btn btm-edit">Изменить</button>
+                    </div>
+                </div>
+                <div class="account-row">
+                    <div class="account-columns">Пароль</div>
+                    <div class="account-columns">**********</div>
+                    <div class="account-columns"></div>
+                    <div class="account-columns"><button class="btn btm-edit">Изменить</button>
+                    </div>
+                </div>
+                <div class="account-row table-head-bg pb-100">
+                    <div class="account-columns">Адрес доставки</div>
+                    <div class="account-columns">Россия, г. Москва, ул. Веселая 15/2, кв. 34</div>
+                    <div class="account-columns text-center"><button class="btn btm-plus"></button></div>
+                    <div class="account-columns"><button class="btn btm-edit">Изменить</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
     </div>
 
 
@@ -342,10 +400,25 @@
     <script src="assets/js/bootstrap.min.js "></script>
     <script src="assets/js/bootstrap-select.js "></script>
     <script src="assets/js/defaults-ru_RU.js "></script>
-    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/intlTelInput.js"></script>
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/bootstrap-input-spinner.js"></script>
     <script src="assets/js/main.js "></script>
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            // any initialisation options go here
+        });
+        intlTelInput(input, {
+            initialCountry: "auto",
+            geoIpLookup: function(success, failure) {
+                $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+                    var countryCode = (resp && resp.country) ? resp.country : "";
+                    success(countryCode);
+                });
+            },
+        });
+    </script>
 
 </body>
 

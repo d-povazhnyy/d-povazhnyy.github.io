@@ -199,15 +199,15 @@ button:focus {
     text-decoration: underline;
 }
 
-.bootstrap-select {
+.select-currency {
     width: 71px !important;
 }
 
-.bootstrap-select>.dropdown-toggle:after {
+.select-currency>.dropdown-toggle:after {
     display: none;
 }
 
-.bootstrap-select {
+.select-currency {
     margin-left: 50px !important;
 }
 
@@ -2599,7 +2599,7 @@ footer {
 }
 
 .basket-columns {
-    text-align: center;
+    text-align: left;
     border: none;
     vertical-align: middle;
     padding-bottom: 23px;
@@ -2643,7 +2643,7 @@ footer {
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    text-align: center;
+    text-align: left;
     color: var(--purplish-grey);
 }
 
@@ -2755,7 +2755,7 @@ footer {
 }
 
 .history-columns {
-    text-align: center;
+    text-align: left;
     border: none;
     vertical-align: middle;
     padding-top: 30px;
@@ -2832,4 +2832,225 @@ footer {
 
 .history-detailed>.basket-table>.basket-row {
     grid-template-columns: repeat(5, 1fr);
+}
+
+.btm-status-filter>.filter-option>.filter-option-inner>.filter-option-inner-inner {
+    color: var(--purplish-grey);
+    transition-duration: 300ms;
+    padding-top: 5px;
+}
+
+.btm-status-filter:hover>.filter-option>.filter-option-inner>.filter-option-inner-inner {
+    color: #f7f7f7;
+    transition-duration: 300ms;
+}
+
+.btm-status-filter {
+    border-radius: 10px;
+    border: solid 3px var(--heather);
+    background-color: #f7f7f7;
+    color: var(--purplish-grey);
+    transition-duration: 300ms;
+    height: 55px;
+}
+
+.btm-status-filter:hover {
+    border: solid 3px #ac46c6;
+    background-color: #ac46c6;
+    color: #f7f7f7;
+    transition-duration: 300ms;
+}
+
+.btm-status-filter::after {
+    margin-left: 4px;
+    content: "";
+    border: none;
+    width: 26px;
+    height: 26px;
+    background-image: url(/assets/img/ico/sort.svg);
+    background-position: center;
+    background-size: 26px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 5px !important;
+    transition-duration: 300ms;
+    border-top: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    border-left: none !important;
+}
+
+.btm-status-filter:hover.btm-status-filter::after {
+    margin-left: 4px;
+    content: "";
+    border: none;
+    width: 26px;
+    height: 26px;
+    background-image: url(/assets/img/ico/sort-hover.svg);
+    background-position: center;
+    background-size: 26px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 5px !important;
+    transition-duration: 300ms;
+    border-top: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    border-left: none !important;
+}
+
+.input-date {
+    border-radius: 10px;
+    border: solid 3px var(--heather);
+    background: var(--white);
+    height: 55px;
+    cursor: pointer;
+    color: var(--purplish-grey);
+}
+
+.input-date:focus {
+    color: #495057;
+    background: var(--white);
+    border: solid 3px #ac46c6;
+    outline: 0;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.input-date:hover {
+    color: #495057;
+    background: var(--white);
+    border: solid 3px #ac46c6;
+    outline: 0;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.history-status {
+    width: 216px;
+    height: 55px;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 55px;
+    font-family: AvenirNextCyr;
+    font-size: 18.5px;
+    text-align: center;
+    color: var(--white-two);
+}
+
+.account-table {
+    grid-template-columns: repeat(1, 100%);
+    display: grid;
+    grid-auto-rows: minmax(85px, auto);
+    justify-content: left;
+}
+
+.account-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-auto-rows: minmax(85px, auto);
+    align-items: center;
+    justify-content: left;
+}
+
+.account-columns {
+    text-align: left;
+    border: none;
+    vertical-align: middle;
+    font-family: AvenirNextCyr;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--purplish-grey);
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+.btm-plus {
+    background-image: url(../img/ico/plus.svg);
+    width: 43px;
+    height: 43px;
+    background-size: 21px 21px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30px;
+    border: solid 2px var(--sick-green);
+    background-color: var(--white-two);
+}
+
+.btm-plus:hover {
+    background-image: url(../img/ico/plus-hover.svg);
+    width: 43px;
+    height: 43px;
+    background-size: 21px 21px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30px;
+    border: solid 2px var(--sick-green);
+    background-color: var(--sick-green);
+}
+
+.btm-edit {
+    width: 216px;
+    height: 65px;
+    border-radius: 10px;
+    border: solid 2px var(--sick-green);
+    background-color: var(--white-two);
+    font-size: 22px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--purplish-grey);
+}
+
+.btm-edit:hover {
+    width: 216px;
+    height: 65px;
+    border-radius: 10px;
+    border: solid 2px var(--sick-green);
+    background-color: var(--sick-green);
+    font-size: 22px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--white-two);
+}
+
+.account-input {
+    border-radius: 10px;
+    border: solid 2px var(--sick-green);
+    background-color: var(--white-two);
+    height: 65px;
+    font-family: AvenirNextCyr;
+    font-size: 17px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--purplish-grey);
+}
+
+.iti__flag {
+    background-image: url("../img/flags.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .iti__flag {
+        background-image: url("../img/flags@2x.png");
+    }
 }
