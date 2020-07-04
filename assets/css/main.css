@@ -13,6 +13,12 @@
     outline: none;
 }
 
+.btn.focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
 
 /* Slider */
 
@@ -1140,7 +1146,6 @@ button:focus {
 
 .main-block-stocks {
     padding-top: 37px;
-    padding-bottom: 80px;
     background-color: var(--white-two);
 }
 
@@ -1200,6 +1205,7 @@ button:focus {
 .main-block-logo {
     height: 107px;
     background-color: var(--white);
+    margin-top: 85px;
 }
 
 .main-block-logo-a {
@@ -3052,5 +3058,78 @@ footer {
 (min-resolution: 192dpi) {
     .iti__flag {
         background-image: url("../img/flags@2x.png");
+    }
+}
+
+@media (max-width: 575.98px) {
+    .main-jumbotron-h1 {
+        text-align: center;
+        font-family: AvenirNextCyr;
+        font-size: 36px;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: var(--white-two);
+        padding-top: 38px;
+        padding-left: 0px;
+    }
+    .main-jumbotron-h2 {
+        font-family: AvenirNextCyr;
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: var(--white-two);
+        padding-top: 15px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .main-jumbotron-h3 {
+        font-family: AvenirNextCyr;
+        font-size: 13px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: var(--purplish-grey-two);
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+    }
+    .main-jumbotron-button {
+        position: absolute;
+        bottom: 40px;
+        right: 50px;
+    }
+    .main-footer-form-group {
+        margin-top: 25px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 320px;
+    }
+    .main-search-input {
+        width: 230px !important;
+        height: 48px;
+        border: none;
+        font-family: AvenirNextCyr;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: var(--heather);
+        border-radius: 10px;
+    }
+    .main-search {
+        width: 320px;
+        height: 60px;
+        border-radius: 10px;
+        background-color: var(--white-two);
     }
 }

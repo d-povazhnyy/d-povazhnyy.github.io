@@ -154,10 +154,26 @@
     <div class="catalog-filter-block container">
         <div class="row justify-content-between">
             <div class="col">
-                <button type="button" class="btn catalog-filter-btn"><span>Фильтр</span><div class="catalog-filter-ico" ></div></button>
+                <div class="dropdown">
+                    <button type="button" class="btn catalog-filter-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Фильтр</span><div class="catalog-filter-ico" ></div></button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <div class="col-12 item-color-select text-center ">
+
+                        </div>
+
+                    </div>
+                </div>
             </div>
             <div class="col">
-                <button type="button" class="btn catalog-filter-btn float-right"> <span>Сортировка</span><div class="catalog-sort-ico" ></div></button>
+                <div class="dropdown">
+                    <button type="button" class="btn catalog-filter-btn float-right" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Сортировка</span><div class="catalog-sort-ico" ></div></button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">По популярности</a>
+                        <a class="dropdown-item" href="#">По новизне</a>
+                        <a class="dropdown-item" href="#">По возрастанию цены</a>
+                        <a class="dropdown-item" href="#">По убыванию цены</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -1203,14 +1219,17 @@
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="assets/js/popper.min.js "></script>
-    <script src="assets/js/bootstrap.min.js "></script>
+    <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/bootstrap-select.js "></script>
     <script src="assets/js/defaults-ru_RU.js "></script>
+    <script src="assets/js/intlTelInput.js"></script>
+    <script src="assets/js/utils.js"></script>
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/bootstrap-input-spinner.js"></script>
-    <script src="assets/js/main.js "></script>
+    <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>

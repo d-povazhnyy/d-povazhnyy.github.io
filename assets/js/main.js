@@ -58,6 +58,9 @@ $('.slider-nav').slick({
     nextArrow: '.slick-down',
     centerPadding: '100px',
 });
+
+$("input[type='number']").inputSpinner()
+
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function() {
     'use strict';
@@ -79,7 +82,9 @@ $('.slider-nav').slick({
 
 // To style only selects with the my-select class
 
-$.fn.selectpicker.Constructor.BootstrapVersion = '4';
+var input = document.querySelector("#phone");
+window.intlTelInput(input, {
 
 
-$("input[type='number']").inputSpinner()
+
+});
