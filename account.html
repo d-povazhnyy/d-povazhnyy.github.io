@@ -204,7 +204,7 @@
                 <div class="account-row collapse" id="collapseExample4"></div>
                 <div class="account-row collapse" id="collapseExample5">
                     <div class="account-columns"></div>
-                    <div class="account-columns"><input type="tel" id="phone" name="tel" class="form-control account-input"></div>
+                    <div class="account-columns"><input type="tel" id="phone" name="tel" class="form-control account-input" placeholder="Номер телефона"></div>
                     <div class="account-columns"></div>
                     <div class="account-columns"><button class="btn btm-edit" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">Сохранить</button>
                     </div>
@@ -406,7 +406,7 @@
     <script src="assets/js/main.js "></script>
     <script>
         var input = document.querySelector("#phone");
-        window.iintlTelInput(input, {
+        window.intlTelInput(input, {
             initialCountry: "auto",
             geoIpLookup: function(success, failure) {
                 $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
@@ -414,6 +414,7 @@
                     success(countryCode);
                 });
             },
+
         });
     </script>
 
