@@ -3058,6 +3058,10 @@ footer {
     background-image: url("../img/flags.png");
 }
 
+.display-none {
+    display: none;
+}
+
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
     .iti__flag {
@@ -3066,6 +3070,9 @@ footer {
 }
 
 @media (max-width: 575.98px) {
+    .display-none {
+        display: block;
+    }
     .main-jumbotron-h1 {
         text-align: center;
         font-family: AvenirNextCyr;
