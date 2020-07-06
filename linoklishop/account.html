@@ -9,11 +9,6 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap-select.css">
     <link rel="stylesheet" href="assets/fonts/fonts.css">
-    <link rel="stylesheet" href="assets/css/intlTelInput.css">
-
-
-
-
     <link rel="stylesheet" href="assets/css/main.css">
     <title>LinokliShop - Одежда оптом и в розницу</title>
 </head>
@@ -22,7 +17,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light main-navbar">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="assets/img/logo.png" width="auto" height="44" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,100 +26,102 @@
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-ite main-nav-item">
-                            <a class="nav-link main-nav-link" href="#">Доставка и оплата</a>
+                            <a class="nav-link main-nav-link" href="shiping.html">Доставка и оплата</a>
                         </li>
                         <li class="nav-item main-nav-item">
-                            <a class="nav-link main-nav-link" href="#">Контакты</a>
+                            <a class="nav-link main-nav-link" href="contacts.html">Контакты</a>
                         </li>
                         <li class="nav-item main-nav-item">
-                            <a class="nav-link main-nav-link" href="#">Отследить заказ</a>
+                            <a class="nav-link main-nav-link" href="track-order.html">Отследить заказ</a>
                         </li>
                         <li class="nav-item main-nav-item">
-                            <a class="nav-link main-nav-link" href="#">Для оптовиков</a>
+                            <a class="nav-link main-nav-link" href="/opt">Для оптовиков</a>
                         </li>
                     </ul>
-                    <select class="selectpicker" data-style="main-btn-outline">
-                        <option class="">USD $</option>
+                    <div class="main-block-link">
+                        <select class="selectpicker select-currency" data-width="75px" data-style="main-btn-outline">
+                        <option>USD $</option>
                         <option>RUB ₽</option>
                         <option data-content="KGS <u>С</u>">KGS</option>
-                      </select>
-                    <a class="main-login-ico" href="" data-toggle="modal" data-target="#login-modal"></a>
-                    <a class="main-favorites-ico" href="#"></a>
-                    <a class="main-basket-ico" href="#"></a>
+                    </select>
+                        <a class="main-login-ico" href="" data-toggle="modal" data-target="#login-modal"></a>
+                        <a class="main-favorites-ico" href="favorites.html"></a>
+                        <a class="main-basket-ico" href="basket.html"></a>
+                    </div>
                 </div>
             </div>
         </nav>
         <nav class="navbar navbar-expand-lg navbar-light main-navbar-2">
             <div class="container">
-                <ul class="navbar-nav ">
-                    <li class="nav-item dropdown ">
-                        <button class="btn nav-link dropdown-toggle main-nav-link2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <ul class="navbar-nav mobile-w-100">
+                    <li class="nav-item dropdown mobile-w-100">
+                        <button class="btn nav-link dropdown-toggle main-nav-link2 mobile-w-100" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Каталог
                         </button>
                         <div class="dropdown-menu main-nav-dropdown-menu" aria-labelledby="navbarDropdown">
                             <div class="main-nav-dropdown-menu-span">Верхняя одежда</div>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Брюки</a>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Водолазки</a>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Куртки</a>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Джинсы</a>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Толстовки</a>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Верхняя одежда</a>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Бельё</a>
-                            <a class="btn  main-nav-dropdown-menu-btm align-middle" href="#" role="button">В каталог</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Брюки</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Водолазки</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Куртки</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Джинсы</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Толстовки</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Верхняя одежда</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Бельё</a>
+                            <a class="btn  main-nav-dropdown-menu-btm align-middle" href="catalog.html" role="button">В каталог</a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown main-p-l-100">
-                        <button class="btn nav-link dropdown-toggle main-nav-link2 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <li class="nav-item dropdown main-p-l-100 mobile-display-none">
+                        <button class="btn nav-link dropdown-toggle main-nav-link2 " id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Новинки
                         </button>
                         <div class="dropdown-menu main-nav-dropdown-menu" aria-labelledby="navbarDropdown">
                             <div class="main-nav-dropdown-menu-span">Верхняя одежда</div>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Брюки</a>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Водолазки</a>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Куртки</a>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Джинсы</a>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Толстовки</a>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Верхняя одежда</a>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Бельё</a>
-                            <a class="btn  main-nav-dropdown-menu-btm align-middle" href="#" role="button">В каталог</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Брюки</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Водолазки</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Куртки</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Джинсы</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Толстовки</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Верхняя одежда</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Бельё</a>
+                            <a class="btn  main-nav-dropdown-menu-btm align-middle" href="catalog.html" role="button">В каталог</a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown main-p-l-100">
-                        <button class="btn nav-link dropdown-toggle main-nav-link2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <li class="nav-item dropdown main-p-l-100 mobile-display-none">
+                        <button class="btn nav-link dropdown-toggle main-nav-link2" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Популярное
                         </button>
                         <div class="dropdown-menu main-nav-dropdown-menu" aria-labelledby="navbarDropdown">
                             <div class="main-nav-dropdown-menu-span">Верхняя одежда</div>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Брюки</a>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Водолазки</a>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Куртки</a>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Джинсы</a>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Толстовки</a>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Верхняя одежда</a>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Бельё</a>
-                            <a class="btn  main-nav-dropdown-menu-btm align-middle" href="#" role="button">В каталог</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Брюки</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Водолазки</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Куртки</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Джинсы</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Толстовки</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Верхняя одежда</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Бельё</a>
+                            <a class="btn  main-nav-dropdown-menu-btm align-middle" href="catalog.html" role="button">В каталог</a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown main-p-l-100">
-                        <button class="btn nav-link dropdown-toggle main-nav-link2 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <li class="nav-item dropdown main-p-l-100 mobile-display-none">
+                        <button class="btn nav-link dropdown-toggle main-nav-link2 " id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Акции
                         </button>
                         <div class="dropdown-menu main-nav-dropdown-menu" aria-labelledby="navbarDropdown">
                             <div class="main-nav-dropdown-menu-span">Верхняя одежда</div>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Брюки</a>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Водолазки</a>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Куртки</a>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Джинсы</a>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Толстовки</a>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Верхняя одежда</a>
-                            <a class="dropdown-item main-nav-dropdown-menu-a" href="#">Бельё</a>
-                            <a class="btn  main-nav-dropdown-menu-btm align-middle" href="#" role="button">В каталог</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Брюки</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Водолазки</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Куртки</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Джинсы</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Толстовки</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Верхняя одежда</a>
+                            <a class="dropdown-item main-nav-dropdown-menu-a" href="catalog.html">Бельё</a>
+                            <a class="btn  main-nav-dropdown-menu-btm align-middle" href="catalog.html" role="button">В каталог</a>
                         </div>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0 main-search">
+                <form class="form-inline  main-search">
                     <input class="form-control main-search-input" placeholder="Вы что-то ищете?" aria-label="Поиск">
-                    <button class="btn  my-2 my-sm-0 main-search-buttom" type="submit"><img src=""></button>
+                    <button class="btn   main-search-buttom" type="submit"></button>
                 </form>
             </div>
         </nav>
@@ -301,39 +298,41 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <span class="main-footer-form-item1"> Связаться с нами</span>
+                    <div class="main-footer-form-item1"> Связаться с нами</div>
                     <form class="row form-group main-footer-form-group">
                         <input type="name" class="form-control main-footer-form-input main-m-r-35" id="exampleFormControlInput1" placeholder="Имя">
                         <input type="phone" class="form-control main-footer-form-input " id="exampleFormControlInput2" placeholder="Номер телефона">
                         <button type="submit" class="btn main-footer-form-btm">Отправить</button>
                     </form>
                 </div>
+
                 <div class="col main-footer-follow">
-                    <span class="main-footer-form-item2">Присоединиться к нам</span>
+                    <div class="main-footer-form-item2">Присоединиться к нам</div>
 
-                    <a class="main-whatsapp-ico" href="#"></a>
-                    <a class="main-telegram-ico" href="#"></a>
+                    <a class="main-whatsapp-ico" href="http://wa.me/79257616566"></a>
+                    <a class="main-telegram-ico" href="https://t.me/d_povazhnyy"></a>
+
+                </div>
+                <div class="w-100 display-none"></div>
+                <div class="col">
+
+                    <a class="nav-link nav-link2" href="catalog.html">Каталог</a>
+                    <a class="nav-link nav-link2" href="catalog.html">Акции</a>
+                    <a class="nav-link nav-link2" href="catalog.html">Новинки</a>
+                    <a class="nav-link nav-link2" href="catalog.html">Популярное</a>
+
 
                 </div>
                 <div class="col">
-
-                    <a class="nav-link nav-link2" href="#">Каталог</a>
-                    <a class="nav-link nav-link2" href="#">Акции</a>
-                    <a class="nav-link nav-link2" href="#">Новинки</a>
-                    <a class="nav-link nav-link2" href="#">Популярное</a>
-
-
-                </div>
-                <div class="col">
-                    <a class="nav-link nav-link3" href="#">Доставка и отплата</a>
-                    <a class="nav-link nav-link3" href="#">Контакты</a>
-                    <a class="nav-link nav-link3" href="#">Отследить покупку</a>
-                    <a class="nav-link nav-link3" href="#">Для оптовиков</a>
-                    <a class="nav-link nav-link3" href="#">Личный кабинет</a>
+                    <a class="nav-link nav-link3" href="shiping.html">Доставка и отплата</a>
+                    <a class="nav-link nav-link3" href="contacts.html">Контакты</a>
+                    <a class="nav-link nav-link3" href="track-order.html">Отследить покупку</a>
+                    <a class="nav-link nav-link3" href="/opt">Для оптовиков</a>
+                    <a class="nav-link nav-link3" href="account.html">Личный кабинет</a>
                 </div>
                 <div class="w-100"></div>
                 <div class="col main-footer-copyright">
-                    «LinokliShop» © 2020 - ВСЕ ПРАВА ЗАЩИЩЕНЫ
+                    «LinokliShop» © 2020
 
                 </div>
                 <div class="col main-footer-copyright text-right">
@@ -438,19 +437,16 @@
     </div>
 
 
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
-    <script src="assets/js/popper.min.js "></script>
-    <script src="assets/js/bootstrap.min.js "></script>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/bootstrap-select.js "></script>
     <script src="assets/js/defaults-ru_RU.js "></script>
     <script src="assets/js/intlTelInput.js"></script>
     <script src="assets/js/utils.js"></script>
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/bootstrap-input-spinner.js"></script>
-    <script src="assets/js/main.js "></script>
-    <script>
-    </script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 
