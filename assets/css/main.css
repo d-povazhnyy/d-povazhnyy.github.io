@@ -205,6 +205,10 @@ button:focus {
     text-decoration: underline;
 }
 
+.main-block-link {
+    display: flex;
+}
+
 .select-currency {
     width: 71px !important;
 }
@@ -3106,30 +3110,233 @@ footer {
         bottom: 40px;
         right: 50px;
     }
+    .main-search-input {
+        width: calc(100% - 64px) !important;
+    }
+    .main-search {
+        width: 100%;
+        border-radius: 10px;
+        background-color: var(--white-two);
+        margin: 10px;
+    }
+    .mobile-display-none {
+        display: none
+    }
+    .mobile-w-100 {
+        width: 100%;
+    }
+    .main-search-buttom {
+        margin-left: 8px;
+        border-radius: 10px;
+        background-image: url(../img/ico/search.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 56px;
+        height: 48px;
+        background-size: 27px 27px;
+    }
+    .main-nav-link2,
+    .main-nav-link2:active,
+    .main-nav-link2:focus {
+        width: 100%;
+        border-radius: 0;
+    }
+    .main-nav-dropdown-menu {
+        padding: 36px 42px 25px 36px;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.08);
+        border: none;
+        margin: 0;
+        transition-duration: 200ms;
+        background-color: var(--white-two);
+    }
+    .main-block-jumbotron {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: var(--white);
+    }
+    .main-heading-text {
+        font-family: AvenirNextCyr;
+        font-size: 22px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--purplish-grey);
+        position: relative;
+        padding-top: 15px;
+    }
+    .main-heading-span {
+        background-color: var(--white);
+        padding: 0px 20px;
+        z-index: 1;
+        position: relative;
+    }
+    .main-heading-text2 {
+        font-family: AvenirNextCyr;
+        font-size: 22px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--purplish-grey);
+        position: relative;
+        padding-top: 15px;
+    }
+    .main-heading-span2 {
+        background-color: var(--white-two);
+        padding: 0 20px;
+        z-index: 1;
+        position: relative;
+    }
+    .slider-main {
+        padding-top: 10px;
+    }
+    .main-heading-span3 {
+        background-color: var(--white);
+        padding: 0 20px;
+        z-index: 1;
+        position: relative;
+    }
+    .main-heading-span4 {
+        background-color: var(--white-two);
+        padding: 0 20px;
+        z-index: 1;
+        position: relative;
+    }
+    .main-block-logo {
+        height: 107px;
+        background-color: var(--white);
+        margin-top: 37px;
+    }
+    .main-footer-form-item1 {
+        font-family: AvenirNextCyr;
+        font-size: 22px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--white-two);
+    }
     .main-footer-form-group {
         margin-top: 25px;
         margin-left: 0;
         margin-right: 0;
-        width: 320px;
+        width: 100%;
+        justify-content: center;
     }
-    .main-search-input {
-        width: 230px !important;
-        height: 48px;
-        border: none;
+    .main-footer-form-input {
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        border: dashed 1px var(--white);
+        background-color: var(--heather);
         font-family: AvenirNextCyr;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
         letter-spacing: normal;
-        color: var(--heather);
-        border-radius: 10px;
+        text-align: left;
+        color: var(--white-two);
+        padding: 0.378rem .75rem;
+        margin-bottom: 14px;
     }
-    .main-search {
-        width: 320px;
-        height: 60px;
+    .main-m-r-35 {
+        margin-right: 0;
+    }
+    .main-footer-form-btm {
+        width: 146px;
+        height: 50px;
         border-radius: 10px;
-        background-color: var(--white-two);
+        background-color: var(--white);
+        font-family: AvenirNextCyr;
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--heather);
+        position: initial;
+        left: 0;
+        top: 0;
+        transition-duration: 200ms;
+    }
+    .main-footer-follow {
+        margin-left: 0;
+        text-align: center;
+    }
+    .main-footer-form-item2 {
+        font-family: AvenirNextCyr;
+        font-size: 22px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--white-two);
+        margin-left: 0;
+    }
+    .main-whatsapp-ico {
+        display: inline-block;
+        background-image: url(../img/ico/whatsapp.svg);
+        width: 52px;
+        height: 52px;
+        margin-left: 0;
+        margin-top: 19px;
+        background-size: 31px 31px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        border: solid 3px var(--white);
+    }
+    .nav-link2 {
+        font-family: AvenirNextCyr;
+        font-size: 16px;
+        font-weight: 400;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -0.45px;
+        text-align: left;
+        color: var(--white) !important;
+        padding: .5rem 1rem;
+    }
+    .nav-link3 {
+        font-family: AvenirNextCyr;
+        font-size: 16px;
+        font-weight: 400;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -0.4px;
+        text-align: left;
+        color: var(--white) !important;
+        padding: .5rem 1rem;
+        white-space: nowrap;
+    }
+    .main-nav-item {
+        margin-left: 0;
+        white-space: nowrap;
+    }
+    .main-basket-ico,
+    .main-favorites-ico,
+    .main-login-ico,
+    .select-currency {
+        margin-left: 0 !important;
+    }
+    .main-block-link {
+        display: flex;
+        justify-content: space-evenly;
     }
 }
