@@ -1,0 +1,618 @@
+@charset "utf-8";
+
+/**
+*
+* -----------------------------------------------------------------------------
+*
+* Author : Denis Povazhnyy SunDev.pro
+* Author URI : http://sundev.pro/
+*
+* -----------------------------------------------------------------------------
+*
+**/
+
+
+/* Содержание
+---------------------------------------------------------
+01. Общий CSS
+02. Глобальные классы
+03. Раздел заголовка
+04. Липкое Меню
+05. Slider Section
+06. Хлебные крошки CSS
+07. RS Coming Soon
+08. About Us
+09. join-our-events
+10. Our Event Schedule
+11. Our Event Sponsors
+12. Testimonial CSS
+13. Price Table Section
+14. Sidebar area
+15. Upcoming Event List
+16. rs-event-details
+17. Team Sections
+18. Team Single
+19. Calltoaction CSS
+20. Registration Form 
+21. Latest News
+22. Blog Details 
+23. Rs Gallery CSS
+24. Newsletter CSS
+25. RS Search Event
+26. RS-Footer CSS
+27. shop-page-area
+28. Shipping Cart Area
+29. RS vanues section
+30. Contact Page Section 
+31. ScrollUp CSS
+32. 404 Page CSS
+33. Preloader CSS
+
+--------------------------------------------------------*/
+
+
+/* -----------------------------------
+    01. Общий CSS
+-------------------------------------*/
+
+
+/* Шрифты */
+
+@font-face {
+    font-family: 'PFBeauSansProXThin';
+    src: url('../fonts/PFBeauSansPro-XThinItalic.eot');
+    src: local('../fonts/PFBeauSansPro-XThinItalic'), url('../fonts/PFBeauSansPro-XThinItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/PFBeauSansPro-XThinItalic.woff') format('woff'), url('../fonts/PFBeauSansPro-XThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PFBeauSansPro';
+    src: url('../fonts/PFBeauSansPro-LightItalic.eot');
+    src: local('../fonts/PFBeauSansPro-LightItalic'), url('../fonts/PFBeauSansPro-LightItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/PFBeauSansPro-LightItalic.woff') format('woff'), url('../fonts/PFBeauSansPro-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PFBeauSansPro';
+    src: url('../fonts/PFBeauSansPro-Bold.eot');
+    src: local('../fonts/PFBeauSansPro-Bold'), url('../fonts/PFBeauSansPro-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/PFBeauSansPro-Bold.woff') format('woff'), url('../fonts/PFBeauSansPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFBeauSansPro';
+    src: url('../fonts/PFBeauSansPro-Italic.eot');
+    src: local('../fonts/PFBeauSansPro-Italic'), url('../fonts/PFBeauSansPro-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/PFBeauSansPro-Italic.woff') format('woff'), url('../fonts/PFBeauSansPro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PFBeauSansPro';
+    src: url('../fonts/PFBeauSansPro-Thin.eot');
+    src: local('../fonts/PFBeauSansPro-Thin'), url('../fonts/PFBeauSansPro-Thin.eot?#iefix') format('embedded-opentype'), url('../fonts/PFBeauSansPro-Thin.woff') format('woff'), url('../fonts/PFBeauSansPro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFBeauSansPro';
+    src: url('../fonts/PFBeauSansPro-Black.eot');
+    src: local('../fonts/PFBeauSansPro-Black'), url('../fonts/PFBeauSansPro-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/PFBeauSansPro-Black.woff') format('woff'), url('../fonts/PFBeauSansPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFBeauSansPro';
+    src: url('../fonts/PFBeauSansPro-ThinItalic.eot');
+    src: local('../fonts/PFBeauSansPro-ThinItalic'), url('../fonts/PFBeauSansPro-ThinItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/PFBeauSansPro-ThinItalic.woff') format('woff'), url('../fonts/PFBeauSansPro-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PFBeauSansPro';
+    src: url('../fonts/PFBeauSansPro-SemiBoldItalic.eot');
+    src: local('../fonts/PFBeauSansPro-SemiBoldItalic'), url('../fonts/PFBeauSansPro-SemiBoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/PFBeauSansPro-SemiBoldItalic.woff') format('woff'), url('../fonts/PFBeauSansPro-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PFBeauSansPro';
+    src: url('../fonts/PFBeauSansPro-BlackItalic.eot');
+    src: local('../fonts/PFBeauSansPro-BlackItalic'), url('../fonts/PFBeauSansPro-BlackItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/PFBeauSansPro-BlackItalic.woff') format('woff'), url('../fonts/PFBeauSansPro-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PFBeauSansProXThin';
+    src: url('../fonts/PFBeauSansPro-XThin.eot');
+    src: local('../fonts/PFBeauSansPro-XThin'), url('../fonts/PFBeauSansPro-XThin.eot?#iefix') format('embedded-opentype'), url('../fonts/PFBeauSansPro-XThin.woff') format('woff'), url('../fonts/PFBeauSansPro-XThin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFBeauSansProBbook';
+    src: url('../fonts/PFBeauSansPro-Bbook.eot');
+    src: local('../fonts/PFBeauSansPro-Bbook'), url('../fonts/PFBeauSansPro-Bbook.eot?#iefix') format('embedded-opentype'), url('../fonts/PFBeauSansPro-Bbook.woff') format('woff'), url('../fonts/PFBeauSansPro-Bbook.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFBeauSansPro';
+    src: url('../fonts/PFBeauSansPro-SemiBold.eot');
+    src: local('../fonts/PFBeauSansPro-SemiBold'), url('../fonts/PFBeauSansPro-SemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/PFBeauSansPro-SemiBold.woff') format('woff'), url('../fonts/PFBeauSansPro-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFBeauSansPro';
+    src: url('../fonts/PFBeauSansPro-Regular.eot');
+    src: local('../fonts/PFBeauSansPro-Regular'), url('../fonts/PFBeauSansPro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/PFBeauSansPro-Regular.woff') format('woff'), url('../fonts/PFBeauSansPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFBeauSansPro';
+    src: url('../fonts/PFBeauSansPro-BoldItalic.eot');
+    src: local('../fonts/PFBeauSansPro-BoldItalic'), url('../fonts/PFBeauSansPro-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/PFBeauSansPro-BoldItalic.woff') format('woff'), url('../fonts/PFBeauSansPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PFBeauSansPro';
+    src: url('../fonts/PFBeauSansPro-Light.eot');
+    src: local('../fonts/PFBeauSansPro-Light'), url('../fonts/PFBeauSansPro-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/PFBeauSansPro-Light.woff') format('woff'), url('../fonts/PFBeauSansPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFBeauSansProBbook';
+    src: url('../fonts/PFBeauSansPro-BbookItalic.eot');
+    src: local('../fonts/PFBeauSansPro-BbookItalic'), url('../fonts/PFBeauSansPro-BbookItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/PFBeauSansPro-BbookItalic.woff') format('woff'), url('../fonts/PFBeauSansPro-BbookItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+/* Цвета */
+
+:root {
+    --white: #ffffff;
+    --pale-grey: #fbfbfc;
+    --dark-grey-blue: #34425c;
+    --white-two: #e3e3e3;
+    --white-three: #dadada;
+    --dark: #181928;
+    --white-four: #efefef;
+    --pinkish-grey: #c7c7c7;
+    --dusk-blue: #28348b;
+    --dark-grey: #222328;
+    --brownish-orange: #db7221;
+    --dark-grey-blue-two: #26324a;
+    --charcoal-grey: #35363a;
+    --warm-grey: #959595;
+    --dusk-blue-two: #273288;
+}
+
+
+/* Основные стили*/
+
+html {
+    font-family: PFBeauSansPro;
+}
+
+.btn:focus,
+.btn.focus {
+    outline: none;
+    box-shadow: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.input-non-btm::-webkit-inner-spin-button {
+    display: none;
+}
+
+
+/* -----------------------------------
+    02. Глобальные классы
+-------------------------------------*/
+
+
+/* -----------------------------------
+    03. Раздел заголовка
+-------------------------------------*/
+
+
+/* -----------------------------------
+    04. Меню
+-------------------------------------*/
+
+.navbar-brand {
+    margin-right: 0;
+}
+
+.main-nav {
+    position: fixed;
+    z-index: 999;
+    margin: 0 auto !important;
+    width: 100%;
+}
+
+.main-nav-link {
+    font-family: PFBeauSansPro;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white) !important;
+}
+
+.main-nav-link:hover>span,
+.main-nav-link.active>span {
+    color: var(--white);
+    text-decoration: none;
+    border-bottom: solid 2px var(--white);
+}
+
+.main-nav.sticky {
+    background-color: var(--dark-grey-blue-two);
+    position: fixed !important;
+    z-index: 999;
+    margin: 0 auto !important;
+    width: 100%;
+}
+
+.logo {
+    height: 62px;
+    width: auto;
+}
+
+.main-nav-select {
+    display: flex;
+}
+
+.main-nav-select-btm {
+    border-radius: 10px;
+    border: solid 1px var(--white);
+    background-color: transparent;
+    font-family: PFBeauSansPro;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--white);
+    line-height: normal;
+    min-width: 56px;
+    height: 28px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 6px 10px;
+}
+
+.main-nav-select-btm:hover,
+.main-nav-select-btm:focus {
+    border: solid 1px var(--white);
+    border-radius: 10px;
+    background-color: var(--white-three);
+    font-family: PFBeauSansPro;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--dusk-blue);
+    line-height: normal;
+}
+
+.main-nav-select-btm::after {
+    display: none;
+}
+
+.main-nav-dropdown-select>a>img,
+.main-nav-select-btm>img {
+    width: auto;
+    height: 12px;
+}
+
+.main-nav-dropdown-select {
+    min-width: 56px;
+    background-color: transparent;
+    border: none;
+    margin: 0 5px;
+    padding: 0;
+}
+
+.main-nav-dropdown-item {
+    border-radius: 10px;
+    border: solid 1px var(--white);
+    background-color: transparent;
+    font-family: PFBeauSansPro;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--white);
+    line-height: normal;
+    min-width: 56px;
+    height: 28px;
+    padding: 6px 10px;
+    margin-top: 10px;
+}
+
+.main-nav-dropdown-item:hover,
+.main-nav-dropdown-item:focus {
+    border: solid 1px var(--white);
+    border-radius: 10px;
+    background-color: var(--white-three);
+    font-family: PFBeauSansPro;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--dusk-blue);
+    line-height: normal;
+}
+
+.main-nav-dropdown-item .navbar-toggler>.close {
+    display: inline;
+}
+
+.navbar-toggler.collapsed>.main-close,
+.navbar-toggler:not(.collapsed)>.navbar-toggler-btm {
+    display: none;
+}
+
+.navbar-dark .navbar-toggler {
+    color: var(--white);
+    border-color: var(--white);
+}
+
+
+/* -----------------------------------
+    05. Первый экран с поиском
+-------------------------------------*/
+
+.main-fullscreen-blok {
+    background-size: cover !important;
+    height: 100vh;
+    height: 1080px;
+    width: 100%;
+}
+
+.main-fullscreen-blok::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.25;
+    background-color: var(--dark);
+}
+
+.main-fullscreen-fill {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.h1-main-heading {
+    padding-top: 140px;
+    font-family: PFBeauSansPro;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--dark-grey-blue);
+}
+
+.search-form {
+    border-radius: 20px;
+    background-color: rgba(24, 25, 40, 0.62);
+}
+
+.search-form-tab-group {
+    margin-top: 120px;
+}
+
+.search-form-tab {
+    font-family: PFBeauSansPro;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--white-two);
+    background-color: rgba(24, 25, 40, 0.42);
+    border-radius: 0;
+    padding: 1rem;
+}
+
+.search-form-tab.brtl {
+    border-radius: 10px 0 0 0;
+}
+
+.search-form-tab.brtr {
+    border-radius: 0 10px 0 0;
+}
+
+.search-form-tab.active {
+    background-color: rgba(24, 25, 40, 0.62);
+}
+
+.search-form-tab.active>span {
+    color: var(--white);
+    text-decoration: none;
+    border-bottom: solid 2px var(--white);
+}
+
+.search-form-tab:hover>span {
+    color: var(--white);
+    text-decoration: none;
+    border-bottom: solid 2px var(--white);
+}
+
+.tab-content {
+    padding: 30px;
+}
+
+.label {
+    font-family: PFBeauSansPro;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--white-two);
+    width: 100%;
+    display: block;
+}
+
+.bootstrap-select>button {
+    border-radius: 30px;
+    border: dashed 1px var(--white-two);
+    background-color: transparent;
+    border-color: var(--white-two);
+    color: var(--white-two) !important;
+    padding: 10px 20px;
+    outline: none !important;
+}
+
+.bootstrap-select>button:hover,
+.bootstrap-select>button:focus {
+    border-radius: 30px;
+    border: dashed 1px var(--white-two);
+    background-color: transparent;
+    border-color: var(--white-two);
+    color: var(--white-two) !important;
+    padding: 10px 20px;
+    outline: none;
+}
+
+.show>.btn-light.dropdown-toggle {
+    color: var(--white-two);
+    background-color: transparent;
+    border-color: var(--white-two);
+}
+
+.bootstrap-select .dropdown-toggle:focus,
+.bootstrap-select>select.mobile-device:focus+.dropdown-toggle {
+    outline: none !important;
+}
+
+.selectpicker-region {}
+
+.selectpicker-placement {}
+
+.input-group-persons {
+    border-radius: 30px;
+    border: dashed 1px var(--white-two);
+    background-color: transparent;
+    padding: 7.5px 20px;
+    min-height: 46px;
+}
+
+.input-persons {
+    background: transparent;
+    border-radius: 5px;
+    border: solid 0.5px var( --white-three);
+    font-family: PFBeauSansPro;
+    font-size: 18px;
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--white-two);
+    outline: none;
+}
+
+.btn-increment {
+    background-image: url(../img/ico/arrow.svg);
+    transform: rotate(180deg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+}
+
+.btn-decrement {
+    background-image: url(../img/ico/arrow.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+}
+
+.input-group-price {
+    border-radius: 30px;
+    border: dashed 1px var(--white-two);
+    background-color: transparent;
+    padding: 7.5px 20px;
+    min-height: 46px;
+}
+
+.input-price {
+    background: transparent;
+    border-radius: 5px;
+    border: solid 0.5px var( --white-three);
+    font-family: PFBeauSansPro;
+    font-size: 18px;
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--white-two);
+    width: 95px;
+    margin: 0px 10px;
+}
