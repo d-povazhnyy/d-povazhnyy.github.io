@@ -909,7 +909,7 @@ a:hover {
 }
 
 .separator1 {
-    background-image: url(/assets/img/3.png);
+    background-image: url(/booking/assets/img/3.png);
     height: 28px;
     background-repeat-y: no-repeat;
     background-size: 51px;
@@ -918,7 +918,7 @@ a:hover {
 }
 
 .separator2 {
-    background-image: url(/assets/img/4.png);
+    background-image: url(/booking/assets/img/4.png);
     height: 19px;
     background-repeat-y: no-repeat;
     background-size: 15px;
@@ -933,7 +933,7 @@ a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(/assets/img/1.png);
+    background-image: url(/booking/assets/img/1.png);
     height: 9px;
     width: auto;
 }
@@ -1134,7 +1134,7 @@ a:hover {
 }
 
 .map-img {
-    background-image: url(/assets/img/ico/map-btm.svg);
+    background-image: url(/booking/assets/img/ico/map-btm.svg);
     background-repeat: no-repeat;
     background-size: 24px;
     background-position: center;
@@ -1142,7 +1142,7 @@ a:hover {
 }
 
 .search-img {
-    background-image: url(/assets/img/ico/search-btm.svg);
+    background-image: url(/booking/assets/img/ico/search-btm.svg);
     background-repeat: no-repeat;
     background-size: 18px;
     background-position: center;
@@ -1150,7 +1150,7 @@ a:hover {
 }
 
 .phone-img {
-    background-image: url(/assets/img/ico/phone.svg);
+    background-image: url(/booking/assets/img/ico/phone.svg);
     background-repeat: no-repeat;
     background-size: 20px;
     background-position: center;
@@ -1158,7 +1158,7 @@ a:hover {
 }
 
 .next-img {
-    background-image: url(/assets/img/ico/next.svg);
+    background-image: url(/booking/assets/img/ico/next.svg);
     background-repeat: no-repeat;
     background-size: 20px;
     background-position: center;
@@ -1166,7 +1166,7 @@ a:hover {
 }
 
 .next-img-white {
-    background-image: url(/assets/img/ico/next-white.svg);
+    background-image: url(/booking/assets/img/ico/next-white.svg);
     background-repeat: no-repeat;
     background-size: 20px;
     background-position: center;
@@ -1174,7 +1174,7 @@ a:hover {
 }
 
 .card-marker-img {
-    background-image: url(/assets/img/ico/marker.svg);
+    background-image: url(/booking/assets/img/ico/marker.svg);
     background-repeat: no-repeat;
     background-size: 14px;
     background-position: center;
@@ -1184,7 +1184,7 @@ a:hover {
 }
 
 .card-sun-img {
-    background-image: url(/assets/img/ico/sun.svg);
+    background-image: url(/booking/assets/img/ico/sun.svg);
     background-repeat: no-repeat;
     background-size: 16px;
     background-position: center;
@@ -1195,7 +1195,7 @@ a:hover {
 }
 
 .card-moon-img {
-    background-image: url(/assets/img/ico/moon.svg);
+    background-image: url(/booking/assets/img/ico/moon.svg);
     background-repeat: no-repeat;
     background-size: 14px;
     background-position: center;
@@ -1245,7 +1245,7 @@ a:hover {
 }
 
 .card-star-img {
-    background-image: url(/assets/img/ico/star.svg);
+    background-image: url(/booking/assets/img/ico/star.svg);
     background-repeat: no-repeat;
     background-size: 18px;
     background-position: center;
