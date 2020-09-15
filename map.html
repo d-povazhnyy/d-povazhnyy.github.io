@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxirWJvjhvJBJXX2hpsEKr_yZ2IiRpg3A&callback=initMap&libraries=&v=weekly" defer></script>
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/slick.css" />
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <style type="text/css">
+        /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+        
+        #map {
+            height: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <script>
+        "use strict";
+
+        let map;
+
+        function initMap() {
+            var coordinates = {
+                    lat: 42.8767897,
+                    lng: 74.4517772
+                },
+                coordinates2 = {
+                    lat: 42.8667897,
+                    lng: 74.4517772
+                },
+                coordinates3 = {
+                    lat: 42.8847897,
+                    lng: 74.4517772
+                },
+                popupContent = '<div class="card"> <div class="card-img" style="background-image: url(/img/5.JPG);"></div> <div class="card-body"> <h5 class="card-title">Shah Palace</h5> <div class="row m-0"> <div class="col-6 m-0"> <div class="row"> <div class="card-marker-img align-self-center"></div> <div class="card-marker-text align-self-center">г. Бишкек</div> </div> <div class="row"> <div class="card-price-text"> Цена от<span>1000 сом</span> </div> </div> </div> <div class="col-6 m-0"> <div class="row justify-content-end"> <div class="card-star-img"></div> <div class="card-star-img"></div> <div class="card-star-img"></div> <div class="card-star-img"></div> <div class="card-star-img"></div> </div> <div class="row justify-content-end"> <div class="card-star-text"> Оценка C. A. T. Company </div> </div> </div> </div> <p class="card-text">Отель Shah Palace расположен в самом центре кыргызской столицы</p> </div> </div>',
+                markerImage = '/img/marker.png',
+
+                map = new google.maps.Map(document.getElementById("map"), {
+                    center: coordinates,
+                    zoom: 15
+                }),
+                marker = new google.maps.Marker({
+                    position: coordinates,
+                    map: map,
+                    animation: google.maps.Animation.DROP,
+                    icon: markerImage
+                }),
+                marker1 = new google.maps.Marker({
+                    position: coordinates2,
+                    map: map,
+                    animation: google.maps.Animation.DROP,
+                    icon: markerImage
+                }),
+                marker2 = new google.maps.Marker({
+                    position: coordinates3,
+                    map: map,
+                    animation: google.maps.Animation.DROP,
+                    icon: markerImage
+                }),
+                infowindow = new google.maps.InfoWindow({
+                    content: popupContent
+                });
+
+            marker.addListener('click', function() {
+                infowindow.open(map, marker);
+            });
+            marker1.addListener('click', function() {
+                infowindow.open(map, marker1);
+            });
+            marker2.addListener('click', function() {
+                infowindow.open(map, marker2);
+            });
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <div id="map"></div>
+</body>
+
+</html>
