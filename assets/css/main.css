@@ -302,6 +302,19 @@ a:hover {
     margin-top: 10px;
 }
 
+@media (max-width: 575.98px) {
+    .m-justify-content-center {
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+    }
+    .m-display-none {
+        display: none;
+    }
+    .m-text-center {
+        text-align: center !important;
+    }
+}
+
 
 /* -----------------------------------
     03. Раздел заголовка
@@ -1014,7 +1027,110 @@ footer {
     }
     .search-form-tab {
         font-size: 18px;
-        padding: 1.5rem 1.5rem;
+        padding: 1rem 1rem;
+    }
+    .tab-content {
+        padding: 15px;
+    }
+    .label {
+        font-family: PFBeauSansPro;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--white-two);
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .bootstrap-select>button {
+        border-radius: 30px;
+        border: dashed 1px var(--white-two);
+        background-color: transparent;
+        border-color: var(--white-two);
+        color: var(--white-two) !important;
+        padding: 10px 20px 10px 28px;
+        height: 50px;
+        outline: none !important;
+    }
+    .bootstrap-select>button:hover,
+    .bootstrap-select>button:focus {
+        border-radius: 30px;
+        border: dashed 1px var(--white-two);
+        background-color: transparent;
+        border-color: var(--white-two);
+        color: var(--white-two) !important;
+        padding: 10px 20px 10px 28px;
+        height: 50px;
+        outline: none;
+    }
+    .input-group-persons {
+        border-radius: 30px;
+        border: dashed 1px var(--white-two);
+        background-color: transparent;
+        padding: 10px 0px;
+        height: 50px;
+        width: 103px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .input-group-price {
+        border-radius: 30px;
+        border: dashed 1px var(--white-two);
+        background-color: transparent;
+        padding: 10px 0px;
+        min-height: 46px;
+        height: 50px;
+        text-align: center;
+        margin: 0 auto;
+        width: 307px;
+        max-width: 100%;
+    }
+    .m-m-t-10 {
+        margin-top: 10px;
+    }
+    .m-m-t-20 {
+        margin-top: 20px;
+    }
+    .callback-btm,
+    .callback-btm:hover {
+        font-family: PFBeauSansPro;
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--white-three);
+    }
+    .callback-btm>.callback-btm-img {
+        transform: rotate(45deg);
+        width: auto;
+        height: 40px;
+        transition-duration: 1s;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .collapsed>.callback-btm-img {
+        transform: rotate(-135deg);
+        width: auto;
+        height: 40px;
+        transition-duration: 1s;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .btm-social {
+        width: 38px;
+        height: 38px;
+        border: solid 2px var(--white-three);
+        border-radius: 27.5px;
+        transition-duration: 0.5s;
+        margin-top: 40px;
+        margin-left: 5px;
     }
 }
 
