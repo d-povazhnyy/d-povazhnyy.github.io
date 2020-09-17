@@ -217,6 +217,11 @@ html {
 body {
     background-color: var(--white-two);
     min-height: 1px;
+    top: 0 !important;
+}
+
+.skiptranslate {
+    display: none !important;
 }
 
 .btn:focus,
@@ -312,6 +317,21 @@ a:hover {
     }
     .m-text-center {
         text-align: center !important;
+    }
+    .h2-heading {
+        font-family: PFBeauSansPro;
+        font-size: 25px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--dusk-blue);
+        padding-top: 30px;
+    }
+    .m-m-t-30 {
+        margin-top: 30px;
     }
 }
 
@@ -637,6 +657,20 @@ footer {
     color: var(--white);
     text-decoration: none;
     border-bottom: solid 1px var(--white);
+}
+
+@media (max-width: 575.98px) {
+    .h3-heading-footer {
+        font-family: PFBeauSansPro;
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: var(--white-two);
+        padding-top: 40px;
+    }
 }
 
 
@@ -1326,6 +1360,18 @@ footer {
     margin-bottom: 65px;
 }
 
+@media (max-width: 575.98px) {
+    .slider-card {
+        margin-top: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .btm-show-all {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
 .separator1 {
     background-image: url(/assets/img/3.png);
     height: 28px;
@@ -1459,6 +1505,61 @@ footer {
     color: var(--white);
     line-height: 2;
     margin-top: 25px;
+}
+
+@media (max-width: 575.98px) {
+    .block-banner-text {
+        font-family: PFBeauSansPro;
+        font-size: 30px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--white);
+        margin-top: 30px;
+    }
+    .block-banner-text2 {
+        font-family: PFBeauSansPro;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--white);
+        margin-top: 10px;
+    }
+    .block-banner-p {
+        font-family: PFBeauSansPro;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--white);
+        line-height: 2;
+        margin-top: 15px;
+    }
+    .btn-for-dark {
+        border-radius: 27.5px;
+        border: solid 2px var(--white-two);
+        font-family: PFBeauSansPro;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--white-two);
+        padding: 10px 10px 10px 25px;
+        transition-duration: 0.5s;
+    }
 }
 
 .btn-for-dark {
