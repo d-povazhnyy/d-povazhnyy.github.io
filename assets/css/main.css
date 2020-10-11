@@ -217,11 +217,6 @@ html {
 body {
     background-color: var(--white-two);
     min-height: 1px;
-    top: 0 !important;
-}
-
-.skiptranslate {
-    display: none !important;
 }
 
 .btn:focus,
@@ -351,6 +346,14 @@ a:hover {
 
 .main-nav {
     position: fixed;
+    z-index: 999;
+    margin: 0 auto !important;
+    width: 100%;
+}
+
+.sticky-menu>.main-nav {
+    background-color: var(--dark-grey-blue-two);
+    position: fixed !important;
     z-index: 999;
     margin: 0 auto !important;
     width: 100%;
@@ -494,6 +497,55 @@ a:hover {
 .navbar-dark .navbar-toggler {
     color: var(--white);
     border-color: var(--white);
+}
+
+.breadcrumb {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 25px 0;
+    margin-bottom: 0;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 0.25rem;
+}
+
+.breadcrumb-item>a {
+    font-family: PFBeauSansPro;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--warm-grey);
+}
+
+.breadcrumb-item>a:hover {
+    color: var(--dusk-blue);
+}
+
+.active {
+    font-family: PFBeauSansPro;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--dusk-blue) !important;
+}
+
+.breadcrumb-item+.breadcrumb-item {
+    padding-left: 0.25rem;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.25rem;
+    color: var(--dusk-blue);
+    content: "/";
 }
 
 
