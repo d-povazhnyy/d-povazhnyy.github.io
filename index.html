@@ -5,16 +5,17 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Пример на bootstrap 4: Продукт - ориентированная на продукт продвигающая маркетинговая страница с обширной сеткой и изображениями.">
+    <meta name="description" content="Главная">
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="assets/img/favicons/apple-touch-icon.png" sizes="180x180">
     <link rel="icon" href="assets/img/icon.png" sizes="32x32" type="image/png">
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/fontawesome-pro.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome-pro.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-select.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <title>Booking C.A.T</title>
 </head>
 
@@ -22,24 +23,18 @@
     <nav class="navbar navbar-dark navbar-expand-sm main-nav">
         <div class="container-xl">
             <div>
-                <a class="navbar-brand" href="index.html">
-                    <img class="logo" src="assets/img/logo.png" alt="C.A.T">
-                </a>
+                <a class="navbar-brand" href="index.html"><img class="logo" src="assets/img/logo.png" alt="C.A.T"></a>
             </div>
             <div class="main-nav-select order-sm-3">
                 <div class="dropdown">
-                    <button class="btn main-nav-select-btm dropdown-toggle" type="button" id="dropdownMenuButton0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="/assets/img/ico/ru.svg" alt=""> RU
-                    </button>
+                    <button class="btn main-nav-select-btm dropdown-toggle" type="button" id="dropdownMenuButton0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="/assets/img/ico/ru.svg" alt=""> RU</button>
                     <div class="dropdown-menu dropdown-select main-nav-dropdown-select" aria-labelledby="dropdownMenuButton0">
-                        <a class="btn dropdown-item main-nav-dropdown-item" href="#"> <img src="/assets/img/ico/en.svg" alt=""> EN</a>
-                        <a class="btn dropdown-item main-nav-dropdown-item" href="#"> <img src="/assets/img/ico/ru.svg" alt=""> RU</a>
+                        <a class="btn dropdown-item main-nav-dropdown-item" href="/en/"> <img src="assets/img/ico/en.svg" alt=""> EN</a>
+                        <a class="btn dropdown-item main-nav-dropdown-item" href="#"> <img src="assets/img/ico/ru.svg" alt=""> RU</a>
                     </div>
                 </div>
                 <div class="dropdown">
-                    <button class="btn main-nav-select-btm dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        USD $
-                    </button>
+                    <button class="btn main-nav-select-btm dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">USD $ </button>
                     <div class="dropdown-menu dropdown-select main-nav-dropdown-select" aria-labelledby="dropdownMenuButton1">
                         <a class="dropdown-item main-nav-dropdown-item" href="#">RUB ₽</a>
                         <a class="dropdown-item main-nav-dropdown-item" href="#">USD $</a>
@@ -73,7 +68,7 @@
                     <a class="nav-item nav-link main-nav-link" href="/tours.html"><span>Туры</span></a>
                     <a class="nav-item nav-link main-nav-link" href="/services.html"><span>Услуги</span></a>
                     <a class="nav-item nav-link main-nav-link" href="/news.html"><span>Новости</span></a>
-                    <a class="nav-item nav-link main-nav-link" href="#"><span>Контакты</span></a>
+                    <a class="nav-item nav-link main-nav-link" href="#contacts"><span>Контакты</span></a>
                 </div>
             </div>
         </div>
@@ -84,10 +79,8 @@
                 <h1 class="h1-main-heading">С.А.Т. Company - обширный каталог отелей, пансионатов, санаториев и гостевых домов по всему Кыргызстану</h1>
                 <nav class="search-form-tab-group">
                     <div class="nav nav-pills justify-content-center" id="nav-tab" role="tablist">
-                        <a class="nav-item  search-form-tab active brtl" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><span>Поиск
-                                отелей</span></a>
-                        <a class="nav-item  search-form-tab brtr" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><span>Поиск
-                                туров</span></a>
+                        <a class="nav-item  search-form-tab active brtl" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><span>Поиск отелей</span></a>
+                        <a class="nav-item  search-form-tab brtr" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><span>Поиск туров</span></a>
                     </div>
                 </nav>
                 <div class="tab-content search-form" id="nav-tabContent">
@@ -185,7 +178,6 @@
                                         <option>6-7 дней</option>
                                         <option>8-9 дней</option>
                                         <option>от 10 дней</option>
-
                                     </select>
                                 </div>
                                 <div class="form-group col-md-4">
@@ -212,7 +204,6 @@
                                 </div>
                             </div>
                             <div class="form-row justify-content-center m-t-40 m-m-t-10">
-
                                 <button type="submit" class="btn btn-for-dark">
                                     <div class="row m-0 ">
                                         <div class="align-self-center">Найти</div>
@@ -467,7 +458,7 @@
 
             </div>
 
-            <a href="#" class="btn btm-show-all btn-for-light">
+            <a href="services.html" class="btn btm-show-all btn-for-light">
                 <div class="row m-0 ">
                     <div class="align-self-center">Все услуги</div>
                     <div class="btm-img next-img align-self-center"></div>
@@ -681,8 +672,8 @@
         <div class="container-xl text-center">
             <div class="slider-card">
                 <div class="card">
-                    <a class="card-a" href="/hotel.html">
-                        <div class="card-img" style="background-image: url(/img/10.jpeg);"></div>
+                    <a class="card-a" href="article.html">
+                        <div class="card-img" style="background-image: url(img/10.jpeg);"></div>
                         <div class="card-body">
                             <h5 class="card-title">Shah Palace</h5>
                             <p class="card-text">Отель Shah Palace расположен в самом центре кыргызской столицы</p>
@@ -690,8 +681,8 @@
                     </a>
                 </div>
                 <div class="card">
-                    <a class="card-a" href="/hotel.html">
-                        <div class="card-img" style="background-image: url(/img/11.jpeg);"></div>
+                    <a class="card-a" href="/article.html">
+                        <div class="card-img" style="background-image: url(img/11.jpeg);"></div>
                         <div class="card-body">
                             <h5 class="card-title">Shah Palace</h5>
                             <p class="card-text">Отель Shah Palace расположен в самом центре кыргызской столицы</p>
@@ -699,8 +690,8 @@
                     </a>
                 </div>
                 <div class="card">
-                    <a class="card-a" href="/hotel.html">
-                        <div class="card-img" style="background-image: url(/img/12.jpeg);"></div>
+                    <a class="card-a" href="/article.html">
+                        <div class="card-img" style="background-image: url(img/12.jpeg);"></div>
                         <div class="card-body">
                             <h5 class="card-title">Shah Palace</h5>
                             <p class="card-text">Отель Shah Palace расположен в самом центре кыргызской столицы</p>
@@ -708,8 +699,8 @@
                     </a>
                 </div>
                 <div class="card">
-                    <a class="card-a" href="/hotel.html">
-                        <div class="card-img" style="background-image: url(/img/13.jpg);"></div>
+                    <a class="card-a" href="/article.html">
+                        <div class="card-img" style="background-image: url(img/13.jpg);"></div>
                         <div class="card-body">
                             <h5 class="card-title">Shah Palace</h5>
                             <p class="card-text">Отель Shah Palace расположен в самом центре кыргызской столицы</p>
@@ -717,8 +708,8 @@
                     </a>
                 </div>
                 <div class="card">
-                    <a class="card-a" href="/hotel.html">
-                        <div class="card-img" style="background-image: url(/img/10.jpeg);"></div>
+                    <a class="card-a" href="/article.html">
+                        <div class="card-img" style="background-image: url(img/10.jpeg);"></div>
                         <div class="card-body">
                             <h5 class="card-title">Shah Palace</h5>
                             <p class="card-text">Отель Shah Palace расположен в самом центре кыргызской столицы</p>
@@ -726,7 +717,7 @@
                     </a>
                 </div>
             </div>
-            <a href="#" class="btn btm-show-all btn-for-light">
+            <a href="/news.html" class="btn btm-show-all btn-for-light">
                 <div class="row m-0 ">
                     <div class="align-self-center">Все новости</div>
                     <div class="btm-img next-img align-self-center"></div>
@@ -744,23 +735,17 @@
                 fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
                 et dolore magnam aliquam quaerat.
             </p>
-
             <h3 class="h3-heading-dark">Наши партнёры</h3>
             <div class="slider-partners">
-                <div class="partners-div text-center"><img src="/img/16.png" class="partners-logo rounded" alt=""></div>
-                <div class="partners-div text-center"><img src="/img/17.png" class="partners-logo rounded" alt=""></div>
-                <div class="partners-div text-center"><img src="/img/18.png" class="partners-logo rounded" alt=""></div>
-                <div class="partners-div text-center"><img src="/img/19.png" class="partners-logo rounded" alt=""></div>
-
+                <div class="partners-div text-center"><img src="img/16.png" class="partners-logo rounded" alt=""></div>
+                <div class="partners-div text-center"><img src="img/17.png" class="partners-logo rounded" alt=""></div>
+                <div class="partners-div text-center"><img src="img/18.png" class="partners-logo rounded" alt=""></div>
+                <div class="partners-div text-center"><img src="img/19.png" class="partners-logo rounded" alt=""></div>
             </div>
-
-
         </div>
-
     </div>
-    <footer>
+    <footer id="contacts">
         <div class="bg-footer">
-
             <div class="callback-footer">
                 <div class="container-xl text-center">
                     <h3 class="h3-heading-footer">Связаться с нами </h3>
@@ -783,13 +768,10 @@
                             <div class="col-12 order-3 order-md-4 align-self-center m-t-50 m-m-t-10" id="text">
                                 <textarea class="form-control callback-textarea" rows="5" cols="45" name="text"></textarea>
                             </div>
-
-
                         </div>
                     </form>
                 </div>
             </div>
-
             <div class="container-xl">
                 <div class="row">
                     <div class="col-6 col-md-4 order-1 ">
@@ -805,7 +787,6 @@
                             </li>
                             <li class="li-footer"><a class="nav-link-footer" href="#"><span>Контакты</span></a></li>
                         </ul>
-
                     </div>
                     <div class="col-md-4 text-center order-3 order-md-2">
                         <h3 class="h3-heading-footer">Контакты</h3>
@@ -836,8 +817,6 @@
                             <a href="http://wa.me/996770011663" target="_blank" class="btn btm-social btm-wa"></a>
                         </div>
                     </div>
-
-
                 </div>
                 <div class="row">
                     <div class="col-6 copyright-text text-left">
@@ -850,17 +829,16 @@
                 </div>
             </div>
         </div>
-
     </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- JavaScript -->
     <script src="assets/js/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/bootstrap-select.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <!-- JavaScript -->
 </body>
 
 </html>
