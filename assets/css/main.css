@@ -1271,7 +1271,7 @@ footer {
 
 .dark>.input-group-persons {
     border-radius: 30px;
-    border: dashed 1px var(--dark-grey);
+    border: dashed 1px var(--warm-grey);
     background-color: transparent;
     padding: 15.5px 0px;
     height: 61px;
@@ -2637,6 +2637,10 @@ table th {
     border-radius: 10px;
 }
 
+.room-item-a:hover {
+    border: 2px solid var(--dusk-blue-two);
+}
+
 #map {
     padding-bottom: 56.25%;
     border-radius: 20px;
@@ -2700,4 +2704,59 @@ table th {
 .services>i {
     color: var(--dusk-blue-two);
     font-size: 130px;
+}
+
+.booking-input,
+.booking-input:focus {
+    border-radius: 27.5px;
+    border: dashed 1px var(--warm-grey);
+    background: transparent;
+    height: 55px;
+    padding: 10px 10px 10px 25px;
+    font-family: PFBeauSansPro;
+    font-size: 18px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--dark-grey);
+    box-shadow: none;
+}
+
+.booking-input::placeholder {
+    font-family: PFBeauSansPro;
+    font-size: 18px;
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--dark-grey);
+}
+
+.booking-textarea,
+.booking-textarea:focus {
+    border-radius: 20px;
+    border: dashed 1px var(--warm-grey);
+    background: transparent;
+    padding: 10px 10px 10px 25px;
+    font-family: PFBeauSansPro;
+    font-size: 18px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--dark-grey);
+    box-shadow: none;
+}
+
+.booking-textarea::placeholder {
+    font-family: PFBeauSansPro;
+    font-size: 18px;
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--dark-grey);
 }

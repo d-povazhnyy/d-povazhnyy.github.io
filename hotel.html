@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-select.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap4-datepicker.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <title>Booking C.A.T</title>
 </head>
@@ -248,7 +249,10 @@
                                 <a class="room-item-a display-none" data-fancybox="gallery1" href="/img/3.JPG" style="background-image:url(/img/3.JPG);"></a>
                                 <a class="room-item-a display-none" data-fancybox="gallery1" href="/img/4.JPG" style="background-image:url(/img/4.JPG);"></a>
                             </td>
-                            <td>Забронировать</td>
+                            <td>
+                                <button type="button" class="btn btm-show-all btn-for-light" data-toggle="modal" data-target="#filterhotels">
+                                    Забронировать
+                                </button></td>
                         </tr>
                     </tbody>
                 </table>
@@ -374,21 +378,89 @@
 
                         <button type="button" class="btm-close" data-dismiss="modal" aria-label="Close"><i
                                 class="fal fa-times"></i></button>
-                        <h5 class="modal-title" id="exampleModalLabel">Фильтр</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Бронь</h5>
                     </div>
 
                     <div class="modal-body">
 
+                        <div class="form-row justify-content-between m-0">
+                            <div class="separator4 col-12 row modal-form-group">
+                                <div class="col-12 col-lg-6 p-0 dark">
+                                    <span class="label-dark">Имя</span>
+                                </div>
+                                <div class="col-12 col-lg-6 p-0 dark">
 
 
-                    </div>
-                    <div class="modal-footer ">
-                        <div class="order-lg-1 order-2 p-0"><button type="button" class="btn btn-link main-btm-link p-0">Очистить
-                                всё</button>
+                                    <input type="text" class="form-control booking-input">
+
+
+                                </div>
+                            </div>
+                            <div class="separator4 col-12 row modal-form-group">
+                                <div class="col-12 col-lg-6 p-0 dark">
+                                    <span class="label-dark">Номер телефона</span>
+                                </div>
+                                <div class="col-12 col-lg-6 p-0 dark">
+
+
+                                    <input type="tel" class="form-control booking-input">
+
+
+                                </div>
+                            </div>
+                            <div class="separator4 col-12 row modal-form-group">
+                                <div class="col-12 col-lg-6 p-0 dark">
+                                    <span class="label-dark">Email</span>
+                                </div>
+                                <div class="col-12 col-lg-6 p-0 dark">
+
+
+                                    <input type="email" class="form-control booking-input">
+
+
+                                </div>
+                            </div>
+
+
+                            <div class="separator4 col-12 row modal-form-group">
+                                <div class="col-12 col-lg-6 p-0 dark">
+                                    <span class="label-dark">Дата заезда</span>
+                                </div>
+                                <div id="sandbox-container" class="col-12 col-lg-6 p-0 dark">
+
+
+                                    <input type="text" class="form-control booking-input">
+
+
+                                </div>
+                            </div>
+                            <div class="separator4 col-12 row modal-form-group">
+                                <div class="col-12 col-lg-6 p-0 dark">
+                                    <span class="label-dark">Количество ночей</span>
+                                </div>
+                                <div class="col-12 col-lg-6 p-0 dark">
+
+                                    <div class="input-group-persons align-items-center">
+                                        <button class="btn-d-i" type="button" onclick="this.nextElementSibling.stepDown()"><i
+                                                class="fal fa-chevron-left"></i></button>
+                                        <input type="number" min="1" max="100" value="1" class="input-persons input-non-btm">
+                                        <button class="btn-d-i" type="button" onclick="this.previousElementSibling.stepUp()"><i
+                                                class="fal fa-chevron-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-12  modal-form-group">
+                                <textarea class="form-control booking-textarea" rows="5" cols="45" name="text" placeholder="Сообщение"></textarea>
+                            </div>
+
+
                         </div>
-                        <div class="order-lg-2 order-1 p-0"><button type="submit" class="btn btn-for-light m-0">
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <div class="p-0">
+                            <button type="submit" class="btn btn-for-light m-0">
                                 <div class="row m-0 ">
-                                    <div class="align-self-center">Показать 567 вариантов</div>
+                                    <div class="align-self-center">Забронировать</div>
                                     <div class="btm-img next-img align-self-center"></div>
                                 </div>
                             </button>
@@ -406,10 +478,22 @@
     <script src="assets/js/bootstrap-select.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/bootstrap-datepicker.js"></script>
     <script src="assets/js/main.js"></script>
     <!-- JavaScript -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxirWJvjhvJBJXX2hpsEKr_yZ2IiRpg3A&callback=initMap&libraries=&v=weekly" defer></script>
     <script>
+        $('#sandbox-container input').datepicker({
+            weekStart: 1,
+            format: "DD, dd M yyyy",
+            language: "ru",
+            clearBtn: true,
+
+            autoclose: true,
+            todayHighlight: true
+        });
+
+
         $("[data-fancybox]").fancybox({
             loop: true,
 
