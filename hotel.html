@@ -15,8 +15,9 @@
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-select.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.min.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap4-datepicker.css" />
+
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap4-datepicker.css" />
     <title>Booking C.A.T</title>
 </head>
 
@@ -195,67 +196,9 @@
         <div class="container-xl text-center">
 
             <div class="table-wrap">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Вместимость</th>
-                            <th>Класс</th>
-                            <th>Описание</th>
-                            <th>Цена</th>
-                            <th>Фото</th>
-                            <th>Бронь</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-label="Вместимость:">Вместимость</td>
-                            <td data-label="Класс:">Двухместный стандарт</td>
-                            <td data-label="Описание:" class="Description">
-                                <div class="content_block">
-                                    <i class="fal fa-dumbbell"></i>Тренажерный зал
-                                    <i class="fal fa-parking"></i>Парковка
-                                    <i class="fal fa-hot-tub"></i>Сауна
-                                    <i class="fal fa-dumbbell"></i>Тренажерный зал
-                                    <i class="fal fa-parking"></i>Парковка
-                                    <i class="fal fa-hot-tub"></i>Сауна
-                                    <i class="fal fa-dumbbell"></i>Тренажерный зал
-                                    <i class="fal fa-parking"></i>Парковка
-                                    <i class="fal fa-hot-tub"></i>Сауна
-                                </div>
-                                <a class="content_toggle" href="#">Подробнее</a>
-                            </td>
-                            <td data-label="Цена:">80 USD</td>
-                            <td data-label="Фото:">
-                                <a class="room-item-a" data-fancybox="gallery1" href="/img/2.JPG" style="background-image:url(/img/2.JPG);"></a>
-                                <a class="room-item-a display-none" data-fancybox="gallery1" href="/img/3.JPG" style="background-image:url(/img/3.JPG);"></a>
-                                <a class="room-item-a display-none" data-fancybox="gallery1" href="/img/4.JPG" style="background-image:url(/img/4.JPG);"></a>
-                            </td>
-                            <td>Забронировать</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Вместимость:">Вместимость</td>
-                            <td data-label="Класс:">Двухместный стандарт</td>
-                            <td data-label="Описание:">
-                                <div class="content_block">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in libero cursus, placerat magna in, malesuada ligula. Proin tellus lacus, tempor in est sodales, elementum fringilla tellus. Donec dignissim elit arcu, et tempor nunc cursus at. Phasellus non
-                                    commodo lacus, non tempus mi. Donec mattis eros a porta ullamcorper. Pellentesque at ullamcorper turpis. Aliquam non semper ligula, sed porttitor nulla. Donec a elit accumsan, egestas urna ut, elementum ex. Cras vitae
-                                    elit nec tortor luctus fermentum. Maecenas et orci in mi venenatis feugiat in sed lectus.
-                                </div>
-                                <a class="content_toggle" href="#">Подробнее</a>
-                            </td>
-                            <td data-label="Цена:">80 USD</td>
-                            <td data-label="Фото:">
-                                <a class="room-item-a" data-fancybox="gallery1" href="/img/2.JPG" style="background-image:url(/img/2.JPG);"></a>
-                                <a class="room-item-a display-none" data-fancybox="gallery1" href="/img/3.JPG" style="background-image:url(/img/3.JPG);"></a>
-                                <a class="room-item-a display-none" data-fancybox="gallery1" href="/img/4.JPG" style="background-image:url(/img/4.JPG);"></a>
-                            </td>
-                            <td>
-                                <button type="button" class="btn btm-show-all btn-for-light" data-toggle="modal" data-target="#filterhotels">
-                                    Забронировать
-                                </button></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <button type="button" class="btn btm-show-all btn-for-light" data-toggle="modal" data-target="#filterhotels">
+                    Забронировать
+                </button>
             </div>
 
 
@@ -430,6 +373,18 @@
 
 
                                     <input type="text" class="form-control booking-input">
+
+
+                                </div>
+                            </div>
+                            <div class="separator4 col-12 row modal-form-group">
+                                <div class="col-12 col-lg-6 p-0 dark">
+                                    <span class="label-dark">Дата заезда</span>
+                                </div>
+                                <div class="col-12 col-lg-6 p-0 dark">
+
+
+                                    <input type="date" class="form-control booking-input">
 
 
                                 </div>

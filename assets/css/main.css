@@ -2594,6 +2594,8 @@ table th {
     letter-spacing: 1px;
 }
 
+
+/* 
 @media screen and (max-width: 768px) {
     table {
         border: 0;
@@ -2627,6 +2629,7 @@ table th {
         font-weight: bold;
     }
 }
+*/
 
 .room-item-a {
     display: inline-block;
