@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Пример работы ГЕО таргетинга</title>
+
+<script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="https://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+<script type="text/javascript">
+        $(document).ready(function(){
+                ymaps.ready(function(){
+                    var geolocation = ymaps.geolocation;
+                    $('#cou').html('Ваша страна: '+geolocation.country);
+                    $('#tow').html('Ваш город: '+geolocation.city);
+                    $('#reg').html('Ваш регион: '+geolocation.region);
+                });
+            });
+</script>
+</head>
+<body>
+    <div id="cou">Ваша страна: ... определяется ...</div>
+    <div id="tow">Ваш город: ... определяется ...</div>
+    <div id="reg">Ваш регион: ... определяется ...</div>
+</body>
+</html>
