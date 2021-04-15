@@ -468,7 +468,7 @@ a:hover{
     margin-left: 25px;
     margin-right: 25px;
     padding: 30px;
-    min-height: 230px;
+    height: 230px;
 }
 
 .reviews__item:hover,
