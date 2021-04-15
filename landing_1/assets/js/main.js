@@ -4,7 +4,7 @@ $('.reviews__slider').slick({
     slidesToScroll: 1,
     dots: true,
     variableWidth: false,
-    adaptiveHeight: false,
+    adaptiveHeight: true,
     prevArrow: $('.reviews__slider__prev'),
     nextArrow: $('.reviews__slider__next'),
     appendDots: $('.reviews__slider__dots'),
