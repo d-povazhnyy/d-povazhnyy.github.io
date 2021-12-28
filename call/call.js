@@ -24,7 +24,7 @@ function login() {
     socket = new JsSIP.WebSocketInterface("wss://lk.sunpbx.kg:8086");
     _ua = new JsSIP.UA(
         {
-            uri: "sip:" + this.loginText.val() + "@YOUR_SERVER",
+            uri: "sip:" + this.loginText.val(),
             password: this.passwordText.val(),
             display_name: this.loginText.val(),
             sockets: [socket]
